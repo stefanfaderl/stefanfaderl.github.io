@@ -45,7 +45,7 @@
                 <h1>Stefan Faderl</h1>
                 <h2>Jr. Frontend Developer</h2>
                 <a href="#about"><i class="fa-solid fa-circle-chevron-down fa-bounce"></i></a>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 307">
                     <path fill="#fff" fill-opacity="1"
                         d="M0,64L48,58.7C96,53,192,43,288,74.7C384,107,480,181,576,176C672,171,768,85,864,80C960,75,1056,149,1152,170.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                     </path>
@@ -278,10 +278,12 @@
         </section>
 
         <article>
-            <section class="container-contact-form">
+            <section class="container-contact-form" action="https://formsubmit.co/btc.stefanfaderl@gmail.com"
+                method="POST">
                 <form>
-                    <input type="text" id="fname" name="firstname" placeholder="Name*" required>
-                    <input type="text" name="email" id="email" placeholder="Email*" required>
+                    <input type="hidden" name="_subject" value="Neue E-Mail Anfrage">
+                    <input type="text" name="name" placeholder="Name*" required>
+                    <input type="text" name="email" placeholder="Email*" required>
                     <textarea id="textarea" name="textarea" placeholder="Please enter your message*"
                         required></textarea>
                     <input type="submit" value="Submit">
