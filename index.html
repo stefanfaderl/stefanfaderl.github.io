@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Faderl - Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/c2b40c48ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section id="progress">
+            <i class="fa-solid fa-circle-chevron-up" id="progress-value"></i>
+        </section>
+        <img src="images/SF-logo.png" alt="logo" onclick="refreshPage()" tabindex="1">
+        <nav>
+            <ul>
+                <li><a href='#about' tabindex="2">About</a></li>
+                <li><a href='#projects' tabindex="3">Projects</a></li>
+                <li><a href='#contact' tabindex="4">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wave upper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 219">
+                <path fill="#f2b035" fill-opacity="1"
+                    d="M0,64L48,58.7C96,53,192,43,288,74.7C384,107,480,181,576,176C672,171,768,85,864,80C960,75,1056,149,1152,170.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+        <article class="wave">
+            <section>
+                <h1>Stefan Faderl</h1>
+                <h2>Jr. Frontend Developer</h2>
+                <a href="#about"><i class="fa-solid fa-circle-chevron-down fa-bounce"></i></a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,64L48,58.7C96,53,192,43,288,74.7C384,107,480,181,576,176C672,171,768,85,864,80C960,75,1056,149,1152,170.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+            </section>
+        </article>
+
+        <section class="mainSectionsHeading">
+            <h3 id="about">About</h3>
+            <p>Personal Info</p>
+            <h4>brief description</h4>
+        </section>
+
+        <article class="flex-container-about">
+            <article class="grid-container-about">
+                <section class="grid-item-1">
+                    <h3>Hey! I'm Stefan,</h3>
+                    <p> a passionate Frontend Developer from Austria.
+                        I like to create cool projects online so everyone can see my work and skills.
+                        I'll try to enhance the UX/UI and I am curious about your feedback. Maybe you have some ideas
+                        what could be improved? Feel free to <a href='#contact'>contact me</a>.
+                    </p>
+                    <img src="images/github.png" alt="Github" onclick="NewTab()" onmousedown="NewTab()">
+                </section>
+            </article>
+
+            <article class="grid-container-about-2">
+                <section class="grid-item-2">
+                    <h3>Current Techstack:</h3>
+                </section>
+                <div class="grid-item-3"><img src="images/html-5.png" alt="HTML-5"></div>
+                <div class="grid-item-4"><img src="images/css.png" alt="CSS3"></div>
+                <div class="grid-item-5"><img src="images/bootstrap.png" alt="Bootstrap5"></div>
+                <div class="grid-item-6"><img src="images/Sass.png" alt="Sass"></div>
+                <div class="grid-item-7"><img src="images/js.png" alt="JavaScript"></div>
+                <div class="grid-item-8"><img src="images/TS1.png" alt="TypeScript"></div>
+                <div class="grid-item-9"><img src="images/php.png" alt="PHP"></div>
+                <div class="grid-item-10"><img src="images/MySQL.png" alt="mySQL"></div>
+                <div class="grid-item-11"><img src="images/Angular.png" alt="Angular"></div>
+            </article>
+        </article>
+
+        <section class="mainSectionsHeading">
+            <h3 id="projects">Projects (more to come)</h3>
+            <p>My latest projects</p>
+            <h4>built from scratch</h4>
+        </section>
+
+        <article class="flex-container-projects">
+            <article class="flex-item-1">
+                <section>
+                    <h3>Customer Management System</h3>
+
+                    <div id="slideshow1" class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/CRM1.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/CRM2.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/CRM3.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/CRM4.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/CRM5.png" class="openNewTab">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                            <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                            <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                            <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+                            <span class="dot" onclick="currentSlide(5, slideshow1)"></span>
+                        </div>
+
+                    </div>
+                    <p>
+                        I created a CRM-System where a registered user can save, edit and display entries in the
+                        database.
+                        MySQL is used for the connection to the database. Every user that is logged in can only
+                        edit and delete the entries he has created. The user can see when each of his
+                        entries has been created or modified. The other users do not see this information.
+                    </p>
+
+                    <p class="techUsed">
+                        PHP • MySQLi • JavaScript • Figma • CSS3 • HTML5
+                    </p>
+
+                    <div class="git-img-projects">
+                        <a href="https://github.com/stefanfaderl/Customer-Management-System" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/github.png" alt="Github"></a>
+                    </div>
+                </section>
+            </article>
+
+            <article class="flex-item-2">
+                <section>
+                    <h3>Math Quiz</h3>
+                    <div id="slideshow2" class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/Math1.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/Math2.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/Math3.png" class="openNewTab">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                            <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                            <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+                        </div>
+                    </div>
+                    <p>
+                        There are nine different tasks to solve. Every task has random numbers and the tasks become more
+                        and more difficult. If the player has solved the task correctly, he moves up one level.
+                        If the result is wrong, he stays in the same level. The score is saved in the local storage
+                        and the corresponding level is visually highlighted with a colour.
+                    </p>
+                    <p class="techUsed">
+                        jQuery • CSS3 • HTML5
+                    </p>
+                    <div class="git-img-projects">
+                        <a href="https://github.com/stefanfaderl/Math-Quiz" target="_blank" rel="noopener noreferrer">
+                            <img src="images/github.png" alt="Github"></a>
+                    </div>
+                </section>
+            </article>
+
+            <article class="flex-item-3">
+                <section>
+                    <h3>Guess Numbers</h3>
+                    <div id="slideshow3" class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/Guess1.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/Guess2.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/Guess3.png" class="openNewTab">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, slideshow3)"></span>
+                            <span class="dot" onclick="currentSlide(2, slideshow3)"></span>
+                            <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
+                        </div>
+                    </div>
+                    <p>
+                        The user defines an upper limit starting from zero. The number of attempts is as well
+                        determined by the user. After his guess, the user gets a hint whether the number was correct,
+                        too high or too low.
+                    </p>
+                    <p class="techUsed">
+                        JavaScript • Bootstrap5 • HTML5
+                    </p>
+                    <div class="git-img-projects">
+                        <a href="https://github.com/stefanfaderl/Guess-Numbers" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/github.png" alt="Github"></a>
+
+                    </div>
+                </section>
+            </article>
+
+            <article class="flex-item-4">
+                <section>
+                    <h3>Rock Paper Scissors</h3>
+                    <div id="slideshow4" class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/Rps1.png" class="openNewTab">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/Rps2.png" class="openNewTab">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, slideshow4)"></span>
+                            <span class="dot" onclick="currentSlide(2, slideshow4)"></span>
+                        </div>
+                    </div>
+                    <p>
+                        Everybody knows this game. No long description needed.
+                        Three rounds. The winner takes it all.
+                    </p>
+                    <p class="techUsed">
+                        JavaScript • CSS3 • HTML5
+                    </p>
+                    <div class="git-img-projects">
+                        <a href="https://github.com/stefanfaderl/Rock-Paper-Scissors" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="images/github.png" alt="Github"></a>
+                    </div>
+                </section>
+            </article>
+        </article>
+
+        <section class="mainSectionsHeading">
+            <h3 id="contact">Contact</h3>
+            <p>Contact me</p>
+            <h4>get in touch with me</h4>
+        </section>
+
+        <article>
+            <section class="container-contact-form">
+                <form>
+                    <input type="text" id="fname" name="firstname" placeholder="Name*" required>
+                    <input type="text" name="email" id="email" placeholder="Email*" required>
+                    <textarea id="textarea" name="textarea" placeholder="Please enter your message*"
+                        required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Built using
+            <img src="images/html-5.png" alt="HTML-5">
+            <img src="images/Sass.png" alt="Sass">
+            <img src="images/js.png" alt="JavaScript">
+            with help from
+            <img src="images/coffee-mug.png" alt="coffee-mug">
+        </p>
+        <h5>Source code of my portfolio <img src="images/github.png" alt="Github" onclick="NewTab()"
+                onmousedown="NewTab()"></h5>
+        <h6>StefanFaderl.com ©2022 </h6>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
