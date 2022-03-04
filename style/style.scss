@@ -183,7 +183,7 @@ h5 {
 .flex-container-about {
   display: flex;
   justify-content: space-evenly;
-  margin: 40px 40px 100px 40px;
+  margin: 40px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -314,6 +314,32 @@ h5 {
     margin-bottom: 20px;
   }
 
+  .textProjects {
+    .moreText {
+      display: none;
+    }
+    &.show-more {
+      .moreText {
+        display: inline;
+      }
+      .dotsMoreText {
+        display: none;
+      }
+    }
+  }
+
+  .read-more-btn {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
   .git-img-projects {
     cursor: pointer;
     width: 50px;
@@ -324,6 +350,7 @@ h5 {
   }
 
   .techUsed {
+    margin-top: 20px;
     border-top: $primary-color 2px solid;
     padding-top: 20px;
     color: $primary-color;
@@ -523,7 +550,8 @@ footer {
   }
 
   .grid-container-about {
-    width: 250px;
+    width: 350px;
+    margin-bottom: 40px;
     min-width: 190px;
     img {
       width: 70px;
@@ -531,7 +559,7 @@ footer {
   }
 
   .grid-container-about-2 {
-    width: 250px;
+    width: 350px;
     grid-template-areas:
       "two two"
       "three four"

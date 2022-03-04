@@ -29,6 +29,10 @@ let slideshow4 = document.getElementById("slideshow4");
 slideshow4.currentSlideIndex = 1;
 showSlides(slideshow4.currentSlideIndex, slideshow4);
 
+let slideshow5 = document.getElementById("slideshow5");
+slideshow5.currentSlideIndex = 1;
+showSlides(slideshow5.currentSlideIndex, slideshow5);
+
 function plusSlides(n, slideshow) {
   showSlides((slideshow.currentSlideIndex += n), slideshow);
 }
@@ -94,3 +98,15 @@ img.forEach((n) =>
     window.open(url, "_blank");
   })
 );
+
+const readMoreBtn = document.querySelector(".read-more-btn");
+const textProjects = document.querySelector(".textProjects");
+
+readMoreBtn.addEventListener("click", (e) => {
+  textProjects.classList.toggle("show-more");
+  if (readMoreBtn.innerText === "Read More") {
+    readMoreBtn.innerText = "Read Less";
+  } else {
+    readMoreBtn.innerText = "Read More";
+  }
+});
