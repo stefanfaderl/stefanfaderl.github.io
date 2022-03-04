@@ -439,11 +439,14 @@ h5 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: #f2b035;
+  opacity: 30%;
 }
 
 .slideshow-container .prev:hover, .slideshow-container .prev:focus,
 .slideshow-container .next:hover,
 .slideshow-container .next:focus {
+  opacity: 100%;
   background-color: #f2b035;
 }
 
@@ -646,7 +649,9 @@ footer h5 > img {
   }
   .slideshow-container .prev,
   .slideshow-container .next {
+    top: 37.5%;
     font-size: 20px;
+    padding: 12px;
   }
   #progress {
     height: 45px;

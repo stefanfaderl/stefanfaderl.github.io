@@ -378,8 +378,11 @@ h5 {
     font-size: 30px;
     transition: 0.6s ease;
     user-select: none;
+    background-color: $primary-color;
+    opacity: 30%;
     &:hover,
     &:focus {
+      opacity: 100%;
       background-color: $primary-color;
     }
   }
@@ -583,7 +586,9 @@ footer {
   .slideshow-container {
     .prev,
     .next {
+      top: 37.5%;
       font-size: 20px;
+      padding: 12px;
     }
   }
 
