@@ -194,7 +194,7 @@ h5 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 40px 40px 100px 40px;
+  margin: 40px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -371,6 +371,30 @@ h5 {
   margin-bottom: 20px;
 }
 
+[class^="flex-item-"] .textProjects .moreText {
+  display: none;
+}
+
+[class^="flex-item-"] .textProjects.show-more .moreText {
+  display: inline;
+}
+
+[class^="flex-item-"] .textProjects.show-more .dotsMoreText {
+  display: none;
+}
+
+[class^="flex-item-"] .read-more-btn {
+  margin: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #f2b035;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 [class^="flex-item-"] .git-img-projects {
   cursor: pointer;
   width: 50px;
@@ -381,6 +405,7 @@ h5 {
 }
 
 [class^="flex-item-"] .techUsed {
+  margin-top: 20px;
   border-top: #f2b035 2px solid;
   padding-top: 20px;
   color: #f2b035;
@@ -597,14 +622,15 @@ footer h5 > img {
     font-size: 1.1rem;
   }
   .grid-container-about {
-    width: 250px;
+    width: 350px;
+    margin-bottom: 40px;
     min-width: 190px;
   }
   .grid-container-about img {
     width: 70px;
   }
   .grid-container-about-2 {
-    width: 250px;
+    width: 350px;
         grid-template-areas: "two two" "three four" "five six" "seven eight" "nine ten";
   }
   .grid-container-about-2 img {
