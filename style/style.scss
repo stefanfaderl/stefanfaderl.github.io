@@ -54,12 +54,13 @@ header {
 
   img {
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
     margin-right: auto;
-    object-fit: cover;
-    width: 100px;
-    height: 100%;
-    border-radius: 20px;
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+    border-radius: 2.5px;
+    border: none;
   }
 
   nav {
@@ -530,7 +531,7 @@ footer {
     ul {
       position: fixed;
       right: -100%;
-      top: 62px;
+      top: 54px;
       gap: 0;
       flex-direction: column;
       background-color: $header-background;
