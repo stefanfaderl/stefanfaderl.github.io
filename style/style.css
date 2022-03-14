@@ -201,6 +201,7 @@ h5 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .grid-container-about {
