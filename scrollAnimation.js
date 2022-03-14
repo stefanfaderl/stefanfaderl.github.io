@@ -11,8 +11,8 @@ let timeline01 = gsap.timeline({
   },
 });
 
-timeline01.from(".grid-container-about", { x: -50, opacity: 0 });
-timeline01.from(".grid-item-1", { y: 150, opacity: 0 }, "-=0.20");
+timeline01.from(".grid-container-about", { x: -50, autoAlpha: 0 });
+timeline01.from(".grid-item-1", { y: 150, autoAlpha: 0 }, "-=0.20");
 
 let timeline02 = gsap.timeline({
   scrollTrigger: {
@@ -21,4 +21,4 @@ let timeline02 = gsap.timeline({
   },
 });
 
-timeline02.from(".grid-container-about-2", { x: 150, opacity: 0 });
+timeline02.from(".grid-container-about-2", { x: 150, autoAlpha: 0 });
