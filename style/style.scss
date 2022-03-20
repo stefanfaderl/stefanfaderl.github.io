@@ -54,12 +54,13 @@ header {
 
   img {
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
     margin-right: auto;
-    object-fit: cover;
-    width: 100px;
-    height: 100%;
-    border-radius: 20px;
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+    border-radius: 2.5px;
+    border: none;
   }
 
   nav {
@@ -186,6 +187,7 @@ h5 {
   margin: 40px;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .grid-container-about {
@@ -399,8 +401,11 @@ h5 {
     font-size: 30px;
     transition: 0.6s ease;
     user-select: none;
+    background-color: $primary-color;
+    opacity: 30%;
     &:hover,
     &:focus {
+      opacity: 100%;
       background-color: $primary-color;
     }
   }
@@ -548,7 +553,7 @@ footer {
     ul {
       position: fixed;
       right: -100%;
-      top: 62px;
+      top: 54px;
       gap: 0;
       flex-direction: column;
       background-color: $header-background;
@@ -604,7 +609,9 @@ footer {
   .slideshow-container {
     .prev,
     .next {
+      top: 37.5%;
       font-size: 20px;
+      padding: 12px;
     }
   }
 
