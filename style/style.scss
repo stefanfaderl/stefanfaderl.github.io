@@ -343,12 +343,33 @@ h5 {
   }
 
   .git-img-projects {
-    cursor: pointer;
-    width: 50px;
-    display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    img {
+      width: 50px;
+    }
+    button {
+      display: inline-block;
+      margin: 10px;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: $primary-color;
+      color: $secondary-color;
+      padding: 0.375rem 0.75rem;
+      border-radius: 0.25rem;
+      border: none;
+      cursor: pointer;
+    }
+    .fa-circle-chevron-right {
+      margin-left: 10px;
+    }
+    .fa-github {
+      margin-left: 10px;
+    }
   }
 
   .techUsed {
