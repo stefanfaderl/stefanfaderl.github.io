@@ -176,19 +176,33 @@
                             <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
                         </div>
                     </div>
-                    <p>
+                    <p class="textProjects">
                         There are nine different tasks to solve. Every task has random numbers and the tasks become more
                         and more difficult. If the player has
-                        solved the task correctly, he moves up one level. If the result is wrong, he stays in the
-                        same level. The score is saved in the local storage
-                        and the corresponding level is visually highlighted with a colour.
+                        sol<span class="dotsMoreText">...</span><span class="moreText">ved the task correctly, he moves
+                            up one level. If the result is wrong, he stays in the
+                            same level. The score is saved in the local storage
+                            and the corresponding level is visually highlighted with a colour.
+                        </span>
                     </p>
+                    <button class="read-more-btn">Read More</button>
                     <p class="techUsed">
                         jQuery • CSS3 • HTML5
                     </p>
+
                     <div class="git-img-projects">
-                        <a href="https://github.com/stefanfaderl/Math-Quiz" target="_blank" rel="noopener noreferrer">
-                            <img src="images/github.png" alt="Github"></a>
+                        <div>
+                            <a href="https://github.com/stefanfaderl/Math-Quiz" target="_blank"
+                                rel="noopener noreferrer">
+                                <button>View code<i class="fa-brands fa-github"></i></button>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://sf-mathquiz.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </article>
@@ -306,18 +320,17 @@
                             <span class="dot" onclick="currentSlide(5, slideshow5)"></span>
                         </div>
                     </div>
-                    <p class="textProjects">
+                    <p>
                         The weather app gets all the important data from API's.
                         It was exciting to fetch so much information and then show and style the
                         most important. I also used
-                        a snackbar from Angular Mat<span class="dotsMoreText">...</span><span class="moreText">erial
-                            to show a catched error message.
-                            I used pipes to transform the data output and added
-                            a progress spinner while fetching data. Side note: Sun or moon represent the
-                            current daytime of the entered location.
-                        </span>
+                        a snackbar from Angular Material
+                        to show a catched error message.
+                        I used pipes to transform the data output and added
+                        a progress spinner while fetching data. Side note: Sun or moon represent the
+                        current daytime of the entered location.
+
                     </p>
-                    <button class="read-more-btn">Read More</button>
                     <p class="techUsed">
                         Angular 12 • Bootstrap5 • SASS • HTML5
                     </p>
@@ -347,7 +360,7 @@
                             <img src="images/Tic-Tac-Toe.jpg" class="openNewTab">
                         </div>
                     </div>
-                    <p class="textProjects">
+                    <p>
                         Classic Tic Tac Toe game. I used classes and modules to structure my project. No point limits.
                     </p>
                     <p class="techUsed">
