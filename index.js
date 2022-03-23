@@ -13,10 +13,6 @@ document.querySelectorAll("a").forEach((n) =>
   })
 );
 
-let slideshow1 = document.getElementById("slideshow1");
-slideshow1.currentSlideIndex = 1;
-showSlides(slideshow1.currentSlideIndex, slideshow1);
-
 let slideshow2 = document.getElementById("slideshow2");
 slideshow2.currentSlideIndex = 1;
 showSlides(slideshow2.currentSlideIndex, slideshow2);
