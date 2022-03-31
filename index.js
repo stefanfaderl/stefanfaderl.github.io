@@ -13,13 +13,9 @@ document.querySelectorAll("a").forEach((n) =>
   })
 );
 
-let slideshow2 = document.getElementById("slideshow2");
-slideshow2.currentSlideIndex = 1;
-showSlides(slideshow2.currentSlideIndex, slideshow2);
-
-let slideshow3 = document.getElementById("slideshow3");
-slideshow3.currentSlideIndex = 1;
-showSlides(slideshow3.currentSlideIndex, slideshow3);
+let slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
 
 function plusSlides(n, slideshow) {
   showSlides((slideshow.currentSlideIndex += n), slideshow);

@@ -448,6 +448,13 @@ h5 {
   font-size: 0.9rem;
 }
 
+/* In progress item */
+.flex-item-7 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .slideshow-container {
   position: relative;
   text-align: initial;
