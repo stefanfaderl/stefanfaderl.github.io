@@ -512,18 +512,28 @@ footer {
   padding: 1em;
   text-align: center;
   letter-spacing: 1.5px;
+  a {
+    text-decoration: none;
+  }
   img {
     object-fit: cover;
     height: 20px;
   }
+  h4,
   h5,
-  h6,
   p {
-    padding: 2.5px;
+    padding: 1.5px;
   }
   h5 > img {
     cursor: pointer;
   }
+}
+
+.footer_dsgvo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 10px;
 }
 
 /**** Start media queries ****/
@@ -668,5 +678,23 @@ footer {
 @media (min-width: 1400px) {
   .container-contact-form {
     margin: 40px 400px 70px 400px;
+  }
+
+  .footer_dsgvo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 450px 5px 450px;
+
+    h4 {
+      &:first-child {
+        border-right: solid;
+        padding-right: 5px;
+      }
+      &:nth-child(2) {
+        padding-left: 5px;
+      }
+    }
   }
 }
