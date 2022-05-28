@@ -159,8 +159,36 @@ h5 {
   font-weight: 300;
 }
 
+.contentSectionGray {
+  padding: 80px 0px;
+  background-color: #cccccc;
+}
+
+.contentSectionWhite {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 0px 40px 0px;
+  background-color: #fff;
+}
+
+.contentSectionDark {
+  padding: 80px 0px;
+  background-color: rgb(56, 56, 56);
+}
+.contentSectionDark .mainSectionsHeading {
+  color: #fff;
+}
+.contentSectionDark .mainSectionsHeading h3 {
+  color: #fff;
+}
+
 .mainSectionsHeading {
   text-align: center;
+  margin-bottom: 80px;
+}
+.mainSectionsHeading h3 {
+  color: black;
+  font-weight: 400;
 }
 .mainSectionsHeading p {
   font-size: 2.5rem;
@@ -172,7 +200,6 @@ h5 {
 .flex-container-about {
   display: flex;
   justify-content: space-evenly;
-  margin: 40px;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
@@ -180,11 +207,10 @@ h5 {
 
 .grid-container-about {
   display: flex;
-  margin: 10px;
   padding: 30px;
   width: 500px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 20px 20px rgba(233, 233, 233, 0.15), 0px 0px 5px 5px rgba(233, 233, 233, 0.3), 0px 0px 2px 2px rgba(233, 233, 233, 0.6);
+  background-color: #fff;
+  border: solid #f2b035 5px;
 }
 .grid-container-about h3 {
   text-align: center;
@@ -201,12 +227,11 @@ h5 {
 
 .grid-container-about-2 {
   display: grid;
-  margin: 10px;
   padding: 30px;
   width: 500px;
   gap: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 20px 20px rgba(233, 233, 233, 0.15), 0px 0px 5px 5px rgba(233, 233, 233, 0.3), 0px 0px 2px 2px rgba(233, 233, 233, 0.6);
+  background-color: #fff;
+  border: solid #f2b035 5px;
   grid-template-areas: "two two two" "three four five" "six seven eight" "nine ten eleven";
 }
 .grid-container-about-2 h3 {
@@ -271,7 +296,6 @@ h5 {
 
 .flex-container-projects {
   display: flex;
-  margin: 70px;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -279,8 +303,8 @@ h5 {
 
 [class^=flex-item-] {
   display: flex;
-  margin: 20px;
   padding: 2rem;
+  margin-bottom: 40px;
   border-radius: 5px;
   box-shadow: 0px 0px 20px 20px rgba(233, 233, 233, 0.15), 0px 0px 5px 5px rgba(233, 233, 233, 0.3), 0px 0px 2px 2px rgba(233, 233, 233, 0.6);
   width: 550px;
@@ -339,8 +363,8 @@ h5 {
   font-weight: bold;
   background-color: #f2b035;
   color: #fff;
-  padding: 0.375rem 0.75rem;
-  border-radius: 0.25rem;
+  padding: 12px 30px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
 }
@@ -451,19 +475,21 @@ h5 {
 
 .container-contact-form {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f2b035;
+  max-width: 800px;
   padding: 20px;
-  margin: 40px 100px 70px 100px;
+  margin: 0 auto;
 }
 .container-contact-form input[type=text],
 .container-contact-form textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 5px;
   box-sizing: border-box;
   margin: 6px 0px 16px 0;
   resize: vertical;
+  background-color: #fff;
 }
 .container-contact-form input[type=text]:focus,
 .container-contact-form textarea:focus {
@@ -474,11 +500,12 @@ h5 {
   height: 200px;
 }
 .container-contact-form input[type=submit] {
-  background-color: #f2b035;
+  background-color: rgb(56, 56, 56);
   color: white;
-  padding: 12px 20px;
+  font-weight: bold;
+  padding: 12px 30px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .container-contact-form input[type=submit]:hover, .container-contact-form input[type=submit]:focus {
@@ -487,32 +514,25 @@ h5 {
 
 footer {
   background-color: #cccccc;
-  padding: 1em;
+  padding: 60px 0px;
+}
+footer .footer-content {
   text-align: center;
-  letter-spacing: 1.5px;
+  line-height: 45px;
 }
-footer a {
-  text-decoration: none;
+footer .footer-content a {
+  color: black;
 }
-footer img {
+footer .footer-content a:hover {
+  color: #f2b035;
+}
+footer .footer-content img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 20px;
 }
-footer h4,
-footer h5,
-footer p {
-  padding: 1.5px;
-}
-footer h5 > img {
+footer .footer-content h5 > img {
   cursor: pointer;
-}
-
-.footer_dsgvo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0 10px;
 }
 
 /**** Start media queries ****/
@@ -635,25 +655,5 @@ footer h5 > img {
 @media (min-width: 1200px) and (max-width: 1400px) {
   [class^=flex-item-] {
     width: 450px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-contact-form {
-    margin: 40px 400px 70px 400px;
-  }
-
-  .footer_dsgvo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 470px 5px 470px;
-  }
-  .footer_dsgvo h4:first-child {
-    border-right: solid;
-    padding-right: 5px;
-  }
-  .footer_dsgvo h4:nth-child(2) {
-    padding-left: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
