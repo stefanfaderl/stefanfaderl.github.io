@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 $primary-color: #f2b035;
 $secondary-color: #fff;
@@ -11,8 +11,10 @@ $header-background: #cccccc;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  // font-family: "Roboto", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  //font-family: "Roboto", sans-serif;
+  // font-family: "Poppins", sans-serif;
 }
 
 body,
@@ -72,7 +74,7 @@ header {
         a {
           color: $third-color;
           text-decoration: none;
-          font-weight: bold;
+          font-weight: 600;
           padding-bottom: 5px;
           &:hover,
           &:focus {
@@ -148,19 +150,20 @@ main {
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   color: $third-color;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   color: $third-color;
 }
 
 h3 {
   color: $primary-color;
+  font-weight: 600;
 }
 
 h4 {

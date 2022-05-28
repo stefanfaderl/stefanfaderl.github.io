@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 
 body,
@@ -65,7 +66,7 @@ header nav ul li {
 header nav ul li a {
   color: rgb(56, 56, 56);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   padding-bottom: 5px;
 }
 header nav ul li a:hover, header nav ul li a:focus {
@@ -134,19 +135,20 @@ main {
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   color: rgb(56, 56, 56);
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   color: rgb(56, 56, 56);
 }
 
 h3 {
   color: #f2b035;
+  font-weight: 600;
 }
 
 h4 {
