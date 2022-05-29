@@ -50,6 +50,7 @@ p {
 
 a {
   font-size: 1.3rem;
+  color: black;
 }
 
 #progress {
@@ -235,9 +236,6 @@ main {
 }
 .grid-container-about p {
   line-height: calc((0.8rem + 0.4vw) * 1.8);
-}
-.grid-container-about a {
-  color: black;
 }
 
 .grid-container-about-2 {
@@ -533,9 +531,6 @@ footer .footer-content {
   text-align: center;
   line-height: 45px;
 }
-footer .footer-content a {
-  color: black;
-}
 footer .footer-content a:hover {
   color: #f2b035;
 }
@@ -546,6 +541,24 @@ footer .footer-content img {
 }
 footer .footer-content h5 > img {
   cursor: pointer;
+}
+
+/* DSGVO & Impressum */
+.dsgvoSites {
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+  margin: 0 auto;
+  word-break: break-all;
+}
+.dsgvoSites h1 {
+  font-size: 2.1rem;
+}
+.dsgvoSites h3 {
+  margin-bottom: 10px;
+}
+.dsgvoSites a {
+  font-size: 1.2rem;
 }
 
 /**** Start media queries ****/
