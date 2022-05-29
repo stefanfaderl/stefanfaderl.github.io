@@ -37,11 +37,11 @@ h3 {
 }
 
 h4 {
-  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 h5 {
-  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 p {
@@ -236,6 +236,9 @@ main {
 .grid-container-about p {
   line-height: calc((0.8rem + 0.4vw) * 1.8);
 }
+.grid-container-about a {
+  color: black;
+}
 
 .grid-container-about-2 {
   display: grid;
@@ -368,7 +371,7 @@ main {
   margin: 10px;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   background-color: #f2b035;
   color: #fff;
@@ -388,8 +391,8 @@ main {
   border-top: #f2b035 2px solid;
   padding-top: 20px;
   color: #f2b035;
+  font-size: 1.1rem;
   font-weight: bold;
-  font-size: 0.9rem;
 }
 
 /* In progress item */
@@ -502,8 +505,8 @@ main {
 }
 .container-contact-form input[type=text]:focus,
 .container-contact-form textarea:focus {
-  outline: #f2b035;
-  border: 1px solid #f2b035;
+  outline: rgb(56, 56, 56);
+  border: 2px solid rgb(56, 56, 56);
 }
 .container-contact-form textarea {
   height: 200px;
@@ -518,7 +521,8 @@ main {
   cursor: pointer;
 }
 .container-contact-form input[type=submit]:hover, .container-contact-form input[type=submit]:focus {
-  background-color: #f1a61c;
+  background-color: #fff;
+  color: rgb(56, 56, 56);
 }
 
 footer {
@@ -553,9 +557,51 @@ footer .footer-content h5 > img {
   xl: 1200px,
   xxl: 1400px
 ); */
+/* < 769px = hamburger menu */
 @media (max-width: 576px) {
+  .fa-circle-chevron-down {
+    font-size: 3rem;
+  }
+
+  .grid-container-about-2 {
+    min-width: 100%;
+    grid-template-areas: "two two" "three four" "five six" "seven eight" "nine ten";
+  }
+  .grid-container-about-2 img {
+    width: 50px;
+    margin: 5px;
+  }
+
+  .slideshow-container .prev,
+.slideshow-container .next {
+    top: 37.5%;
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  #progress {
+    height: 45px;
+    width: 45px;
+  }
+  #progress-value {
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   .hamburger {
@@ -596,49 +642,72 @@ footer .footer-content h5 > img {
     font-size: 1.1rem;
   }
 
-  .grid-container-about {
-    width: 350px;
+  .contentSectionGray {
+    padding: 40px 20px;
+  }
+
+  .contentSectionWhite {
+    padding: 40px 20px;
+  }
+
+  .contentSectionDark {
+    padding: 40px 0px 60px 0px;
+  }
+
+  .mainSectionsHeading {
     margin-bottom: 40px;
-    min-width: 190px;
+    line-height: 40px;
   }
-  .grid-container-about img {
-    width: 70px;
+  .mainSectionsHeading p {
+    font-size: 2rem;
   }
-
-  .grid-container-about-2 {
-    width: 350px;
-    grid-template-areas: "two two" "three four" "five six" "seven eight" "nine ten";
-  }
-  .grid-container-about-2 img {
-    width: 50px;
-    margin: 5px;
+  .mainSectionsHeading h3 {
+    font-size: 1.2rem;
   }
 
-  .container-contact-form,
-.flex-container-projects {
-    margin: 40px 0 50px 0;
+  .grid-container-about,
+.grid-container-about-2 {
+    min-width: 100%;
+    margin-bottom: 40px;
+  }
+  .grid-container-about img,
+.grid-container-about-2 img {
+    width: 60px;
+  }
+  .grid-container-about a,
+.grid-container-about-2 a {
+    font-size: 1rem;
   }
 
   [class^=flex-item-] {
-    margin: 20px 0 20px 0;
+    min-width: 100%;
+  }
+  [class^=flex-item-] .techUsed {
+    font-size: 0.9rem;
+  }
+  [class^=flex-item-] .git-img-projects button {
+    font-size: 1rem;
+    padding: 9px 24px;
   }
 
-  .slideshow-container .prev,
-.slideshow-container .next {
-    top: 37.5%;
-    font-size: 20px;
-    padding: 12px;
-  }
-
-  #progress {
-    height: 45px;
-    width: 45px;
-  }
-  #progress-value {
-    font-size: 35px;
+  .footer-content h4 a {
+    font-size: 1rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .grid-container-about p {
+    text-align: center;
+    padding: 0px 30px;
+  }
+
   #progress {
     height: 50px;
     width: 50px;
@@ -655,18 +724,28 @@ footer .footer-content h5 > img {
   #progress-value {
     font-size: 50px;
   }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .flex-container-projects {
-    margin: 40px 0px 40px 0px;
+
+  .contentSectionGray,
+.contentSectionWhite,
+.contentSectionDark {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .grid-container-about,
+.grid-container-about-2 {
+    min-width: 100%;
+    margin-bottom: 40px;
   }
 
   [class^=flex-item-] {
-    width: 700px;
+    min-width: 100%;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
-  [class^=flex-item-] {
-    width: 450px;
+@media (min-width: 992px) and (max-width: 1200px) {
+  .grid-container-about,
+.grid-container-about-2,
+[class^=flex-item-] {
+    max-width: 450px;
   }
 }/*# sourceMappingURL=style.css.map */

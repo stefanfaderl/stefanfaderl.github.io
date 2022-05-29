@@ -43,11 +43,11 @@ h3 {
 }
 
 h4 {
-  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 h5 {
-  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 p {
@@ -248,6 +248,9 @@ main {
   p {
     line-height: calc((0.8rem + 0.4vw) * 1.8);
   }
+  a {
+    color: black;
+  }
 }
 
 .grid-container-about-2 {
@@ -385,7 +388,7 @@ main {
       margin: 10px;
       justify-content: center;
       align-items: center;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
       background-color: $primary-color;
       color: $secondary-color;
@@ -407,8 +410,8 @@ main {
     border-top: $primary-color 2px solid;
     padding-top: 20px;
     color: $primary-color;
+    font-size: 1.1rem;
     font-weight: bold;
-    font-size: 0.9rem;
   }
 }
 
@@ -518,8 +521,8 @@ main {
     resize: vertical;
     background-color: $secondary-color;
     &:focus {
-      outline: $primary-color;
-      border: 1px solid $primary-color;
+      outline: $third-color;
+      border: 2px solid $third-color;
     }
   }
   textarea {
@@ -535,7 +538,8 @@ main {
     cursor: pointer;
     &:hover,
     &:focus {
-      background-color: #f1a61c;
+      background-color: $secondary-color;
+      color: $third-color;
     }
   }
 }
@@ -572,10 +576,60 @@ footer {
   xxl: 1400px
 ); */
 
+/* < 769px = hamburger menu */
 @media (max-width: 576px) {
-  h1 {
-    font-size: 2rem;
+  .fa-circle-chevron-down {
+    font-size: 3rem;
   }
+
+  .grid-container-about-2 {
+    min-width: 100%;
+    grid-template-areas:
+      "two two"
+      "three four"
+      "five six"
+      "seven eight"
+      "nine ten";
+    img {
+      width: 50px;
+      margin: 5px;
+    }
+  }
+
+  .slideshow-container {
+    .prev,
+    .next {
+      top: 37.5%;
+      font-size: 20px;
+      padding: 12px;
+    }
+  }
+
+  #progress {
+    height: 45px;
+    width: 45px;
+    &-value {
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
   .hamburger {
     display: block;
     margin-right: 1.5vw;
@@ -593,6 +647,7 @@ footer {
       }
     }
   }
+
   nav {
     ul {
       position: fixed;
@@ -619,56 +674,76 @@ footer {
     }
   }
 
-  .grid-container-about {
-    width: 350px;
+  .contentSectionGray {
+    padding: 40px 20px;
+  }
+
+  .contentSectionWhite {
+    padding: 40px 20px;
+  }
+
+  .contentSectionDark {
+    padding: 40px 0px 60px 0px;
+  }
+
+  .mainSectionsHeading {
     margin-bottom: 40px;
-    min-width: 190px;
-    img {
-      width: 70px;
+    line-height: 40px;
+    p {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.2rem;
     }
   }
 
+  .grid-container-about,
   .grid-container-about-2 {
-    width: 350px;
-    grid-template-areas:
-      "two two"
-      "three four"
-      "five six"
-      "seven eight"
-      "nine ten";
+    min-width: 100%;
+    margin-bottom: 40px;
     img {
-      width: 50px;
-      margin: 5px;
+      width: 60px;
+    }
+    a {
+      font-size: 1rem;
     }
   }
 
-  .container-contact-form,
-  .flex-container-projects {
-    margin: 40px 0 50px 0;
-  }
   [class^="flex-item-"] {
-    margin: 20px 0 20px 0;
-  }
-
-  .slideshow-container {
-    .prev,
-    .next {
-      top: 37.5%;
-      font-size: 20px;
-      padding: 12px;
+    min-width: 100%;
+    .techUsed {
+      font-size: 0.9rem;
+    }
+    .git-img-projects button {
+      font-size: 1rem;
+      padding: 9px 24px;
     }
   }
 
-  #progress {
-    height: 45px;
-    width: 45px;
-    &-value {
-      font-size: 35px;
+  .footer-content {
+    h4 {
+      a {
+        font-size: 1rem;
+      }
     }
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .grid-container-about {
+    p {
+      text-align: center;
+      padding: 0px 30px;
+    }
+  }
+
   #progress {
     height: 50px;
     width: 50px;
@@ -686,20 +761,29 @@ footer {
       font-size: 50px;
     }
   }
+
+  .contentSectionGray,
+  .contentSectionWhite,
+  .contentSectionDark {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .grid-container-about,
+  .grid-container-about-2 {
+    min-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  [class^="flex-item-"] {
+    min-width: 100%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .flex-container-projects {
-    margin: 40px 0px 40px 0px;
-  }
-
+  .grid-container-about,
+  .grid-container-about-2,
   [class^="flex-item-"] {
-    width: 700px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  [class^="flex-item-"] {
-    width: 450px;
+    max-width: 450px;
   }
 }
