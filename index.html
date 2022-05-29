@@ -54,353 +54,378 @@
             </section>
         </article>
 
-        <section class="mainSectionsHeading">
-            <h3 id="about">About</h3>
-            <p>Personal Info</p>
-            <h4>brief description</h4>
-        </section>
-
-        <article class="flex-container-about">
-            <article class="grid-container-about">
-                <section class="grid-item-1">
-                    <h3>Hey! I'm Stefan,</h3>
-                    <p> a passionate Frontend Developer from Austria.
-                        I like to create cool projects online so everyone can see my work and skills.
-                        I'll try to enhance the UX/UI and I am curious about your feedback. Maybe you have some ideas
-                        what could be improved? Feel free to <a href='#contact'>contact me</a>.
-                    </p>
-                    <img src="images/github.png" alt="Github" onclick="NewTab()" onmousedown="NewTab()">
-                </section>
-            </article>
-
-            <article class="grid-container-about-2">
-                <section class="grid-item-2">
-                    <h3>Current Techstack:</h3>
-                </section>
-                <div class="grid-item-3"><img src="images/html-5.png" alt="HTML-5"></div>
-                <div class="grid-item-4"><img src="images/css.png" alt="CSS3"></div>
-                <div class="grid-item-5"><img src="images/bootstrap.png" alt="Bootstrap5"></div>
-                <div class="grid-item-6"><img src="images/Sass.png" alt="Sass"></div>
-                <div class="grid-item-7"><img src="images/js.png" alt="JavaScript"></div>
-                <div class="grid-item-8"><img src="images/TS1.png" alt="TypeScript"></div>
-                <div class="grid-item-9"><img src="images/php.png" alt="PHP"></div>
-                <div class="grid-item-10"><img src="images/MySQL.png" alt="mySQL"></div>
-                <div class="grid-item-11"><img src="images/Angular.png" alt="Angular"></div>
-            </article>
-        </article>
-
-        <section class="mainSectionsHeading">
-            <h3 id="projects">Projects (more to come)</h3>
-            <p>My latest projects</p>
-            <h4>built from scratch</h4>
-        </section>
-
-        <article class="flex-container-projects">
-            <article class="flex-item-1" style="order: 3">
-                <section>
-                    <h3>Customer Management System</h3>
-
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/CRM-img.jpg" class="openNewTab">
-                        </div>
-                    </div>
-
-                    <p>
-                        I created a CRM-System where a registered user can save, edit and display entries in the
-                        database. MySQL is used for the connection
-                        to the database. Every user that is logged in can only edit and delete the entries he
-                        has created. The user can see when each of his
-                        entries has been created or modified. The other users do not see this information.
-                    </p>
-                    <p class="techUsed">
-                        PHP • MySQLi • JavaScript • Figma • CSS3 • HTML5
-                    </p>
-
-                    <div class="git-img-projects">
-                        <div>
-                            <a href="https://github.com/stefanfaderl/Customer-Management-System" target="_blank"
-                                rel="noopener noreferrer">
-                                <button>View code<i class="fa-brands fa-github"></i></button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://sf-customer-management-system.herokuapp.com/index.php" target="_blank"
-                                rel="noopener noreferrer">
-                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="flex-item-2" style="order: 7">
-                <section>
-                    <h3>Math Quiz</h3>
-                    <div id="slideshow1" class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/Math1.png" class="openNewTab">
-                        </div>
-
-                        <div class="mySlides fade">
-                            <img src="images/Math2.png" class="openNewTab">
-                        </div>
-
-                        <div class="mySlides fade">
-                            <img src="images/Math3.png" class="openNewTab">
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
-
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
-                            <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
-                            <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
-                        </div>
-                    </div>
-                    <p class="textProjects">
-                        There are nine different tasks to solve. Every task has random numbers and the tasks become more
-                        and more difficult. If the player has
-                        sol<span class="dotsMoreText">...</span><span class="moreText">ved the task correctly, he moves
-                            up one level. If the result is wrong, he stays in the
-                            same level. The score is saved in the local storage
-                            and the corresponding level is visually highlighted with a colour.
-                        </span>
-                    </p>
-                    <button class="read-more-btn">Read More</button>
-                    <p class="techUsed">
-                        jQuery • CSS3 • HTML5
-                    </p>
-
-                    <div class="git-img-projects">
-                        <div>
-                            <a href="https://github.com/stefanfaderl/Math-Quiz" target="_blank"
-                                rel="noopener noreferrer">
-                                <button>View code<i class="fa-brands fa-github"></i></button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://sf-mathquiz.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="flex-item-3" style="order: 5">
-                <section>
-                    <h3>Guess Numbers</h3>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/Guess.jpg" class="openNewTab">
-                        </div>
-                    </div>
-                    <p>
-                        The user defines an upper limit starting from zero. The number of attempts is as well
-                        determined by the user. After his guess, the user gets a hint whether the number was correct,
-                        too high or too low.
-                    </p>
-                    <p class="techUsed">
-                        JavaScript • Bootstrap5 • HTML5
-                    </p>
-
-                    <div class="git-img-projects">
-                        <div>
-                            <a href="https://github.com/stefanfaderl/Guess-Numbers" target="_blank"
-                                rel="noopener noreferrer">
-                                <button>View code<i class="fa-brands fa-github"></i></button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://sf-guess-numbers.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="flex-item-4" style="order: 9">
-                <section>
-                    <h3>Rock Paper Scissors</h3>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/Rps-img.jpg" class="openNewTab">
-                        </div>
-                    </div>
-                    <p>
-                        Everybody knows this game. No long description needed.
-                        Three rounds. The winner takes it all.
-                    </p>
-                    <p class="techUsed">
-                        JavaScript • CSS3 • HTML5
-                    </p>
-
-                    <div class="git-img-projects">
-                        <div>
-                            <a href="https://github.com/stefanfaderl/Rock-Paper-Scissors" target="_blank"
-                                rel="noopener noreferrer">
-                                <button>View code<i class="fa-brands fa-github"></i></button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://sf-rps.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="flex-item-5" style="order: 3">
-                <section>
-                    <h3>Weather App</h3>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/WA-3.png" class="openNewTab">
-                        </div>
-                    </div>
-                    <p>
-                        The weather app gets all the important data from API's.
-                        It was exciting to fetch so much information and then show and style the
-                        most important. I also used
-                        a snackbar from Angular Material
-                        to show a catched error message.
-                        I used pipes to transform the data output and added
-                        a progress spinner while fetching data. Side note: Sun or moon represent the
-                        current daytime of the entered location.
-                    </p>
-                    <p class="techUsed">
-                        Angular • Angular Material • TypeScript • Bootstrap5 • SASS • HTML5
-                    </p>
-                    <div class="git-img-projects">
-                        <div>
-                            <a href="https://github.com/stefanfaderl/Weather-App" target="_blank"
-                                rel="noopener noreferrer">
-                                <button>View code<i class="fa-brands fa-github"></i></button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://sf-weather-app.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="flex-item-6" style="order: 5">
-                <section>
-                    <h3>Tic Tac Toe</h3>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/Tic-Tac-Toe.jpg" class="openNewTab">
-                        </div>
-                    </div>
-                    <p>
-                        Classic Tic Tac Toe game. I used classes and modules to structure my project. No point limits.
-                    </p>
-                    <p class="techUsed">
-                        Vanilla JavaScript • SASS • HTML5
-                    </p>
-                    <div class="git-img-projects">
-                        <div>
-                            <a href="https://github.com/stefanfaderl/TicTacToe" target="_blank"
-                                rel="noopener noreferrer">
-                                <button>View code<i class="fa-brands fa-github"></i></button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://sf-tic-tac-toe.netlify.app/" target="_blank" rel="noopener noreferrer">
-                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="flex-item-7" style="order: 2">
-                <section>
-                    <h3>Pokédex App</h3>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/Pokedex-img.jpg" class="openNewTab">
-                        </div>
-                    </div>
-                    <p>
-                        I replicated the Pokédex from Pokémon using the open RESTful API for data. You can search
-                        Pokémons by name or number. Each Pokémon has it's own route and also a nice retro-style GIF. I
-                        learned a
-                        lot about HTTP requests, routing, observables and many more cool Angular features.
-                    </p>
-                    <p class="techUsed">
-                        Angular • PrimeNG • TypeScript • Bootstrap5 • SASS • Figma • HTML5
-                    </p>
-                    <div class="git-img-projects">
-                        <div>
-                            <a href="https://github.com/stefanfaderl/Pokedex" target="_blank" rel="noopener noreferrer">
-                                <button>View code<i class="fa-brands fa-github"></i></button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://sf-pokedex.netlify.app/overview" target="_blank" rel="noopener noreferrer">
-                                <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="flex-item-8" style="order: 1">
-                <section>
-                    <h3>Webflow Website with CMS</h3>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <img src="images/under-construction.jpg" class="openNewTab">
-                        </div>
-                    </div>
-                    <p>In progress, stay tuned!</p>
-                </section>
-            </article>
-        </article>
-
-        <section class="mainSectionsHeading">
-            <h3 id="contact">Contact</h3>
-            <p>Contact me</p>
-            <h4>get in touch with me</h4>
-        </section>
-
-        <article>
-            <section class="container-contact-form">
-                <form action="https://formsubmit.co/btc.stefanfaderl@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="Neue E-Mail Anfrage">
-                    <input type="text" name="name" placeholder="Name*" required>
-                    <input type="text" name="email" placeholder="Email*" required>
-                    <textarea id="textarea" name="textarea" placeholder="Please enter your message*"
-                        required></textarea>
-                    <input type="submit" value="Submit">
-                </form>
+        <article class="contentSectionGray" id="about">
+            <section class="mainSectionsHeading">
+                <h3>About</h3>
+                <p>Personal Info</p>
+                <h4>brief description</h4>
             </section>
+
+            <div class="flex-container-about">
+                <div class="grid-container-about">
+                    <section class="grid-item-1">
+                        <h3>Hey! I'm Stefan,</h3>
+                        <p> a passionate Frontend Developer from Austria.
+                            I like to create cool projects online so everyone can see my work and skills.
+                            I'll try to enhance the UX/UI and I am curious about your feedback. Maybe you have some
+                            ideas
+                            what could be improved? Feel free to <a href='#contact'>contact me</a>.
+                        </p>
+                        <img src="images/github.png" alt="Github" onclick="NewTab()" onmousedown="NewTab()">
+                    </section>
+                </div>
+
+                <div class="grid-container-about-2">
+                    <section class="grid-item-2">
+                        <h3>Current Techstack:</h3>
+                    </section>
+                    <div class="grid-item-3"><img src="images/html-5.png" alt="HTML-5"></div>
+                    <div class="grid-item-4"><img src="images/css.png" alt="CSS3"></div>
+                    <div class="grid-item-5"><img src="images/bootstrap.png" alt="Bootstrap5"></div>
+                    <div class="grid-item-6"><img src="images/Sass.png" alt="Sass"></div>
+                    <div class="grid-item-7"><img src="images/js.png" alt="JavaScript"></div>
+                    <div class="grid-item-8"><img src="images/TS1.png" alt="TypeScript"></div>
+                    <div class="grid-item-9"><img src="images/php.png" alt="PHP"></div>
+                    <div class="grid-item-10"><img src="images/MySQL.png" alt="mySQL"></div>
+                    <div class="grid-item-11"><img src="images/Angular.png" alt="Angular"></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="contentSectionWhite" id="projects">
+            <section class="mainSectionsHeading">
+                <h3>Projects (more to come)</h3>
+                <p>My latest projects</p>
+                <h4>built from scratch</h4>
+            </section>
+
+            <article class="flex-container-projects">
+                <article class="flex-item-1" style="order: 3">
+                    <section>
+                        <h3>Customer Management System</h3>
+
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/CRM-img.jpg" class="openNewTab">
+                            </div>
+                        </div>
+
+                        <p>
+                            I created a CRM-System where a registered user can save, edit and display entries in the
+                            database. MySQL is used for the connection
+                            to the database. Every user that is logged in can only edit and delete the entries he
+                            has created. The user can see when each of his
+                            entries has been created or modified. The other users do not see this information.
+                        </p>
+                        <p class="techUsed">
+                            PHP • MySQLi • JavaScript • Figma • CSS3 • HTML5
+                        </p>
+
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://github.com/stefanfaderl/Customer-Management-System" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>View code<i class="fa-brands fa-github"></i></button>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://sf-customer-management-system.herokuapp.com/index.php" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="flex-item-2" style="order: 7">
+                    <section>
+                        <h3>Math Quiz</h3>
+                        <div id="slideshow1" class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/Math1.png" class="openNewTab">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="images/Math2.png" class="openNewTab">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="images/Math3.png" class="openNewTab">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                            </div>
+                        </div>
+                        <p class="textProjects">
+                            There are nine different tasks to solve. Every task has random numbers and the tasks become
+                            more
+                            and more difficult. If the player has
+                            sol<span class="dotsMoreText">...</span><span class="moreText">ved the task correctly, he
+                                moves
+                                up one level. If the result is wrong, he stays in the
+                                same level. The score is saved in the local storage
+                                and the corresponding level is visually highlighted with a colour.
+                            </span>
+                        </p>
+                        <button class="read-more-btn">Read More</button>
+                        <p class="techUsed">
+                            jQuery • CSS3 • HTML5
+                        </p>
+
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://github.com/stefanfaderl/Math-Quiz" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>View code<i class="fa-brands fa-github"></i></button>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://sf-mathquiz.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="flex-item-3" style="order: 5">
+                    <section>
+                        <h3>Guess Numbers</h3>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/Guess.jpg" class="openNewTab">
+                            </div>
+                        </div>
+                        <p>
+                            The user defines an upper limit starting from zero. The number of attempts is as well
+                            determined by the user. After his guess, the user gets a hint whether the number was
+                            correct,
+                            too high or too low.
+                        </p>
+                        <p class="techUsed">
+                            JavaScript • Bootstrap5 • HTML5
+                        </p>
+
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://github.com/stefanfaderl/Guess-Numbers" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>View code<i class="fa-brands fa-github"></i></button>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://sf-guess-numbers.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="flex-item-4" style="order: 9">
+                    <section>
+                        <h3>Rock Paper Scissors</h3>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/Rps-img.jpg" class="openNewTab">
+                            </div>
+                        </div>
+                        <p>
+                            Everybody knows this game. No long description needed.
+                            Three rounds. The winner takes it all.
+                        </p>
+                        <p class="techUsed">
+                            JavaScript • CSS3 • HTML5
+                        </p>
+
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://github.com/stefanfaderl/Rock-Paper-Scissors" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>View code<i class="fa-brands fa-github"></i></button>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://sf-rps.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="flex-item-5" style="order: 3">
+                    <section>
+                        <h3>Weather App</h3>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/WA-3.png" class="openNewTab">
+                            </div>
+                        </div>
+                        <p>
+                            The weather app gets all the important data from API's.
+                            It was exciting to fetch so much information and then show and style the
+                            most important. I also used
+                            a snackbar from Angular Material
+                            to show a catched error message.
+                            I used pipes to transform the data output and added
+                            a progress spinner while fetching data. Side note: Sun or moon represent the
+                            current daytime of the entered location.
+                        </p>
+                        <p class="techUsed">
+                            Angular • Angular Material • TypeScript • Bootstrap5 • SASS • HTML5
+                        </p>
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://github.com/stefanfaderl/Weather-App" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>View code<i class="fa-brands fa-github"></i></button>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://sf-weather-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="flex-item-6" style="order: 5">
+                    <section>
+                        <h3>Tic Tac Toe</h3>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/Tic-Tac-Toe.jpg" class="openNewTab">
+                            </div>
+                        </div>
+                        <p>
+                            Classic Tic Tac Toe game. I used classes and modules to structure my project. No point
+                            limits.
+                        </p>
+                        <p class="techUsed">
+                            Vanilla JavaScript • SASS • HTML5
+                        </p>
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://github.com/stefanfaderl/TicTacToe" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>View code<i class="fa-brands fa-github"></i></button>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://sf-tic-tac-toe.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="flex-item-7" style="order: 2">
+                    <section>
+                        <h3>Pokédex App</h3>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/Pokedex-img.jpg" class="openNewTab">
+                            </div>
+                        </div>
+                        <p>
+                            I replicated the Pokédex from Pokémon using the open RESTful API for data. You can search
+                            Pokémons by name or number. Each Pokémon has it's own route and also a nice retro-style GIF.
+                            I
+                            learned a
+                            lot about HTTP requests, routing, observables and many more cool Angular features.
+                        </p>
+                        <p class="techUsed">
+                            Angular • PrimeNG • TypeScript • Bootstrap5 • SASS • Figma • HTML5
+                        </p>
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://github.com/stefanfaderl/Pokedex" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>View code<i class="fa-brands fa-github"></i></button>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://sf-pokedex.netlify.app/overview" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>Open project<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="flex-item-8" style="order: 1">
+                    <section>
+                        <h3>Webflow Website with CMS</h3>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="images/under-construction.jpg" class="openNewTab">
+                            </div>
+                        </div>
+                        <p>I am currently building a website for a client, the structure is already done. Right
+                            now I am waiting for the photos so I can match the colours and styling. The site is
+                            hosted, so you can have a look at the preview.
+                        </p>
+
+                        <div class="git-img-projects">
+                            <div>
+                                <a href="https://www.ensemble-seyltanz.com/" target="_blank" rel="noopener noreferrer">
+                                    <button>Open preview<i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </article>
+        </article>
+
+        <article class="contentSectionDark" id="contact">
+            <section class="mainSectionsHeading">
+                <h3>Contact</h3>
+                <p>Contact me</p>
+                <h4>get in touch with me</h4>
+            </section>
+
+            <article>
+                <section class="container-contact-form">
+                    <form action="https://formsubmit.co/btc.stefanfaderl@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Neue E-Mail Anfrage">
+                        <input type="text" name="name" placeholder="Name*" required>
+                        <input type="text" name="email" placeholder="Email*" required>
+                        <textarea id="textarea" name="textarea" placeholder="Please enter your message*"
+                            required></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </article>
         </article>
     </main>
 
     <footer>
-        <div class="footer_dsgvo">
+        <article class="footer-content">
             <p>Built using
                 <img src="images/html-5.png" alt="HTML-5">
                 <img src="images/Sass.png" alt="Sass">
                 <img src="images/js.png" alt="JavaScript">
-                with help from
-                <img src="images/coffee-mug.png" alt="coffee-mug">
+                with help from <img src="images/coffee-mug.png" alt="coffee-mug">
             </p>
             <p>
                 Source code of my portfolio
@@ -408,8 +433,6 @@
                     rel="noopener noreferrer">
                     <img src="images/github.png" alt="Github"></a>
             </p>
-        </div>
-        <div class="footer_dsgvo">
             <h4>
                 <a href="impressum.html"><b>Impressum</b> </a>
             </h4>
@@ -419,7 +442,7 @@
             </h4>
 
             <h5><b>© 2022 Copyright: stefanfaderl.github.io</b></h5>
-        </div>
+        </article>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>

@@ -1,3 +1,4 @@
+"use strict";
 const hamburger = document.querySelector(".hamburger");
 const ul = document.querySelector("ul");
 
