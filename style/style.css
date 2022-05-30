@@ -642,6 +642,7 @@ footer .footer-content h5 > img {
     text-align: center;
     transition: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
+    z-index: 99;
   }
   nav ul.active {
     right: 0;

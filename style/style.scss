@@ -675,6 +675,7 @@ footer {
       text-align: center;
       transition: 0.3s;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
+      z-index: 99;
       &.active {
         right: 0;
       }

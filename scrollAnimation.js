@@ -2,7 +2,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.defaults({
-  duration: 1,
+  duration: 0.7,
 });
 
 let timeline01 = gsap.timeline({
@@ -12,7 +12,7 @@ let timeline01 = gsap.timeline({
   },
 });
 
-timeline01.from(".grid-container-about", { x: -100, autoAlpha: 0 });
+timeline01.from(".grid-container-about", { x: -50, autoAlpha: 0 });
 timeline01.from(".grid-item-1", { y: 100, autoAlpha: 0 }, "-=0.10");
 
 let timeline02 = gsap.timeline({
