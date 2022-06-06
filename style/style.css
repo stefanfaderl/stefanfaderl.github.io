@@ -301,7 +301,7 @@ main {
 }
 
 .grid-item-11 {
-  grid: eleven;
+  grid-area: eleven;
 }
 
 .flex-container-projects {
@@ -364,7 +364,7 @@ main {
 [class^=flex-item-] .git-img-projects img {
   width: 50px;
 }
-[class^=flex-item-] .git-img-projects button {
+[class^=flex-item-] .git-img-projects .project-btns {
   display: inline-block;
   margin: 10px;
   justify-content: center;
@@ -377,6 +377,7 @@ main {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 [class^=flex-item-] .git-img-projects .fa-circle-chevron-right {
   margin-left: 10px;
@@ -699,7 +700,7 @@ footer .footer-content h5 > img {
   [class^=flex-item-] .techUsed {
     font-size: 0.9rem;
   }
-  [class^=flex-item-] .git-img-projects button {
+  [class^=flex-item-] .git-img-projects .project-btns {
     font-size: 1rem;
     padding: 9px 24px;
   }
