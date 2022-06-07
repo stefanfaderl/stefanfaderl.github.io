@@ -579,7 +579,7 @@ footer .footer-content h5 > img {
 
   .grid-container-about-2 {
     min-width: 100%;
-    grid-template-areas: "two two" "three four" "five six" "seven eight" "nine ten";
+    grid-template-areas: "two two" "three four" "five six" "seven eight" "nine ten" "eleven";
   }
   .grid-container-about-2 img {
     width: 50px;
