@@ -26,7 +26,7 @@ timeline02.from(".grid-container-about-2", { x: 100, autoAlpha: 0 });
 
 const flexItem = gsap.utils.toArray('[class*="flex-item"]');
 
-gsap.set(flexItem, { autoAlpha: 0, y: 140 });
+gsap.set(flexItem, { autoAlpha: 0, y: 170 });
 
 flexItem.forEach((item, i) => {
   const anim = gsap.to(item, {
@@ -39,7 +39,7 @@ flexItem.forEach((item, i) => {
   // Use callbacks to control the state of the animation
   ScrollTrigger.create({
     trigger: item,
-    start: "top center",
+    start: "top 80%",
     end: "bottom center",
     once: true,
     onEnter: (self) => {
