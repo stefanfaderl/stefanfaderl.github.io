@@ -88,7 +88,6 @@ header {
   align-items: center;
   background-color: $header-background;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
-
   img {
     cursor: pointer;
     margin: 10px;
@@ -99,7 +98,6 @@ header {
     border-radius: 2.5px;
     border: none;
   }
-
   nav {
     ul {
       cursor: pointer;
@@ -119,6 +117,14 @@ header {
       }
     }
   }
+}
+
+.margin-right {
+  margin-right: auto;
+}
+
+.noShadow {
+  box-shadow: none;
 }
 
 .hamburger {
@@ -262,7 +268,8 @@ main {
     "two two two"
     "three four five"
     "six seven eight"
-    "nine ten eleven";
+    "nine ten eleven"
+    "twelve thirteen fourteen";
 
   h3 {
     text-align: center;
@@ -312,6 +319,15 @@ main {
 }
 .grid-item-11 {
   grid-area: eleven;
+}
+.grid-item-12 {
+  grid-area: twelve;
+}
+.grid-item-13 {
+  grid-area: thirteen;
+}
+.grid-item-14 {
+  grid-area: fourteen;
 }
 
 .flex-container-projects {
@@ -415,91 +431,32 @@ main {
 }
 
 /* In progress item */
-.flex-item-8 {
+.flex-item-4,
+.flex-item-7 {
   height: fit-content;
 }
 
-.slideshow-container {
-  position: relative;
-  text-align: initial;
-  cursor: pointer;
-  img {
-    max-width: 100%;
-  }
-  .prev,
-  .next {
-    position: absolute;
-    top: 35%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
+.moreProjectsBtn {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  a {
+    font-size: 1rem;
+    padding: 1em 2em;
+    border: 2px solid $third-color;
+    border-radius: 2em;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    user-select: none;
-    background-color: $primary-color;
-    opacity: 30%;
+    letter-spacing: 0.12em;
+    color: $third-color;
+    cursor: pointer;
+    transition: background-color 300ms, color 200ms;
     &:hover,
     &:focus {
-      opacity: 100%;
-      background-color: $primary-color;
+      background-color: $third-color;
+      color: $secondary-color;
     }
   }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .activeSlider,
-  .dot:hover,
-  .dot:focus {
-    /* #717171 */
-    background-color: $primary-color;
-  }
-
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.2;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fade {
-    from {
-      opacity: 0.2;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-}
-
-.next {
-  right: 0;
-  margin-right: 20px;
-  border-radius: 0 5px 5px 0;
-}
-
-.prev {
-  margin-left: 20px;
-  left: 0;
-  border-radius: 5px 0 0 5px;
 }
 
 .container-contact-form {
@@ -551,7 +508,7 @@ footer {
     line-height: 45px;
     a {
       &:hover {
-        color: $primary-color;
+        color: $secondary-color;
       }
     }
     img {
@@ -606,9 +563,10 @@ footer {
       "five six"
       "seven eight"
       "nine ten"
-      "eleven";
+      "eleven twelve"
+      "thirteen fourteen";
     img {
-      width: 50px;
+      width: 55px !important;
       margin: 5px;
     }
   }
@@ -627,6 +585,13 @@ footer {
     width: 45px;
     &-value {
       font-size: 35px;
+    }
+  }
+
+  .moreProjectsBtn {
+    margin: 0.5em;
+    a {
+      font-size: 0.9rem;
     }
   }
 }

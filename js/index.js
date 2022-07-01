@@ -14,46 +14,14 @@ document.querySelectorAll("a").forEach((n) =>
   })
 );
 
-let slideshow1 = document.getElementById("slideshow1");
-slideshow1.currentSlideIndex = 1;
-showSlides(slideshow1.currentSlideIndex, slideshow1);
-
-function plusSlides(n, slideshow) {
-  showSlides((slideshow.currentSlideIndex += n), slideshow);
-}
-
-function currentSlide(n, slideshow) {
-  showSlides((slideshow.currentSlideIndex = n), slideshow);
-}
-
-function showSlides(n, slideshow) {
-  let i;
-  let slides = slideshow.getElementsByClassName("mySlides");
-  let dots = slideshow.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideshow.currentSlideIndex = 1;
-  }
-  if (n < 1) {
-    slideshow.currentSlideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" activeSlider", "");
-  }
-  slides[slideshow.currentSlideIndex - 1].style.display = "block";
-  dots[slideshow.currentSlideIndex - 1].className += " activeSlider";
-}
-
-let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
+const calcScrollValue = () => {
+  const scrollProgress = document.getElementById("progress");
+  const progressValue = document.getElementById("progress-value");
+  const pos = document.documentElement.scrollTop;
+  const calcHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
+  const scrollValue = Math.round((pos * 100) / calcHeight);
   if (pos > 100) {
     scrollProgress.style.display = "grid";
   } else {
@@ -76,10 +44,10 @@ function refreshPage() {
   window.location.reload();
 }
 
-let img = document.querySelectorAll(".openNewTab");
+const img = document.querySelectorAll(".openNewTab");
 img.forEach((n) =>
   n.addEventListener("click", () => {
-    let url = n.getAttribute("src");
+    const url = n.getAttribute("src");
     window.open(url, "_blank");
   })
 );
@@ -87,11 +55,13 @@ img.forEach((n) =>
 const readMoreBtn = document.querySelector(".read-more-btn");
 const textProjects = document.querySelector(".textProjects");
 
-readMoreBtn.addEventListener("click", (e) => {
-  textProjects.classList.toggle("show-more");
-  if (readMoreBtn.innerText === "Read More") {
-    readMoreBtn.innerText = "Read Less";
-  } else {
-    readMoreBtn.innerText = "Read More";
-  }
-});
+if (readMoreBtn) {
+  readMoreBtn.addEventListener("click", (e) => {
+    textProjects.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less";
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+}

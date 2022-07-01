@@ -12,11 +12,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="noShadow">
         <div id="progress">
             <i class="fa-solid fa-circle-chevron-up" id="progress-value"></i>
         </div>
-        <img src="images/myLogo.png" alt="logo" onclick="refreshPage()" tabindex="1">
+        <a href="index.html" class="margin-right">
+            <img src="images/myLogo.png" alt="logo" tabindex="1">
+        </a>
         <nav>
             <ul>
                 <li><a href='/index.html#about' tabindex="2">About</a></li>
@@ -36,75 +38,18 @@
 
         <div class="contentSectionWhite" id="projects">
             <article class="mainSectionsHeading">
-                <h3>All my</h3>
+                <!-- <h3>All my</h3> -->
                 <p>Projects</p>
-                <h4>since I started coding</h4>
+                <h4>since I started coding 💻</h4>
             </article>
 
             <div class="flex-container-projects">
-                <div class="flex-item-1" style="order: 3">
-                    <article>
-                        <h3>Customer Management System</h3>
-
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="images/CRM-img.jpg" class="openNewTab" alt="CRM-img">
-                            </div>
-                        </div>
-
-                        <p>
-                            I created a CRM-System where a registered user can save, edit and display entries in the
-                            database. MySQL is used for the connection
-                            to the database. Every user that is logged in can only edit and delete the entries he
-                            has created. The user can see when each of his
-                            entries has been created or modified. The other users do not see this information.
-                        </p>
-                        <p class="techUsed">
-                            PHP • MySQLi • JavaScript • Figma • CSS3 • HTML5
-                        </p>
-
-                        <div class="git-img-projects">
-                            <div>
-                                <a href="https://github.com/stefanfaderl/Customer-Management-System" target="_blank"
-                                    rel="noopener noreferrer" class="project-btns">View code<i
-                                        class="fa-brands fa-github"></i>
-                                </a>
-                                <!-- <button>View code<i class="fa-brands fa-github"></i></button> -->
-                            </div>
-
-                            <div>
-                                <a href="https://sf-customer-management-system.herokuapp.com/index.php" target="_blank"
-                                    rel="noopener noreferrer" class="project-btns">
-                                    Open project<i class="fa-solid fa-circle-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="flex-item-2" style="order: 7">
+                <div class="flex-item-5" style="order: 2">
                     <article>
                         <h3>Math Quiz</h3>
                         <div id="slideshow1" class="slideshow-container">
                             <div class="mySlides fade">
                                 <img src="images/Math1.png" class="openNewTab" alt="math-quiz-1">
-                            </div>
-
-                            <div class="mySlides fade">
-                                <img src="images/Math2.png" class="openNewTab" alt="math-quiz-2">
-                            </div>
-
-                            <div class="mySlides fade">
-                                <img src="images/Math3.png" class="openNewTab" alt="math-quiz-3">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
-
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
-                                <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
-                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
                             </div>
                         </div>
                         <p class="textProjects">
@@ -141,7 +86,7 @@
                     </article>
                 </div>
 
-                <div class="flex-item-3" style="order: 5">
+                <div class="flex-item-6" style="order: 1">
                     <article>
                         <h3>Guess Numbers</h3>
                         <div class="slideshow-container">
@@ -177,7 +122,7 @@
                     </article>
                 </div>
 
-                <div class="flex-item-4" style="order: 9">
+                <div class="flex-item-7" style="order: 3">
                     <article>
                         <h3>Rock Paper Scissors</h3>
                         <div class="slideshow-container">
@@ -211,46 +156,7 @@
                     </article>
                 </div>
 
-                <div class="flex-item-5" style="order: 3">
-                    <article>
-                        <h3>Weather App</h3>
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="images/WA-3.png" class="openNewTab" alt="weather-app-image">
-                            </div>
-                        </div>
-                        <p>
-                            The weather app gets all the important data from API's.
-                            It was exciting to fetch so much information and then show and style the
-                            most important. I also used
-                            a snackbar from Angular Material
-                            to show a catched error message.
-                            I used pipes to transform the data output and added
-                            a progress spinner while fetching data. Side note: Sun or moon represent the
-                            current daytime of the entered location.
-                        </p>
-                        <p class="techUsed">
-                            Angular • Angular Material • TypeScript • Bootstrap5 • SASS • HTML5
-                        </p>
-                        <div class="git-img-projects">
-                            <div>
-                                <a href="https://github.com/stefanfaderl/Weather-App" target="_blank"
-                                    rel="noopener noreferrer" class="project-btns">
-                                    View code<i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="https://sf-weather-app.netlify.app/" target="_blank" rel="noopener noreferrer"
-                                    class="project-btns">
-                                    Open project<i class="fa-solid fa-circle-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="flex-item-6" style="order: 5">
+                <div class="flex-item-8" style="order: 0">
                     <article>
                         <h3>Tic Tac Toe</h3>
                         <div class="slideshow-container">
@@ -283,66 +189,6 @@
                     </article>
                 </div>
 
-                <div class="flex-item-7" style="order: 2">
-                    <article>
-                        <h3>Pokédex App</h3>
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="images/Pokedex-img.jpg" class="openNewTab" alt="pokedex-image">
-                            </div>
-                        </div>
-                        <p>
-                            I replicated the Pokédex from Pokémon using the open RESTful API for data. You can search
-                            Pokémons by name or number. Each Pokémon has it's own route and also a nice retro-style GIF.
-                            I
-                            learned a
-                            lot about HTTP requests, routing, observables and many more cool Angular features.
-                        </p>
-                        <p class="techUsed">
-                            Angular • PrimeNG • TypeScript • Bootstrap5 • SASS • Figma • HTML5
-                        </p>
-                        <div class="git-img-projects">
-                            <div>
-                                <a href="https://github.com/stefanfaderl/Pokedex" target="_blank"
-                                    rel="noopener noreferrer" class="project-btns">
-                                    View code<i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="https://sf-pokedex.netlify.app/overview" target="_blank"
-                                    rel="noopener noreferrer" class="project-btns">
-                                    Open project<i class="fa-solid fa-circle-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="flex-item-8" style="order: 1">
-                    <article>
-                        <h3>Webflow Website with CMS</h3>
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="images/under-construction.jpg" class="openNewTab"
-                                    alt="website-is-under-construction-image">
-                            </div>
-                        </div>
-                        <p>I am currently building a website for a client, the structure is already done. Right
-                            now I am waiting for the photos so I can match the colours and styling. The site is
-                            hosted, so you can have a look at the preview.
-                        </p>
-
-                        <div class="git-img-projects">
-                            <div>
-                                <a href="https://www.ensemble-seyltanz.com/" target="_blank" rel="noopener noreferrer"
-                                    class="project-btns">
-                                    Open preview<i class="fa-solid fa-circle-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
             </div>
         </div>
     </main>
