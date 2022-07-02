@@ -25,7 +25,6 @@ let timeline02 = gsap.timeline({
 timeline02.from(".grid-container-about-2", { x: 100, autoAlpha: 0 });
 
 const flexItem = gsap.utils.toArray('[class*="flex-item"]');
-
 gsap.set(flexItem, { autoAlpha: 0, y: 170 });
 
 flexItem.forEach((item, i) => {
@@ -48,4 +47,20 @@ flexItem.forEach((item, i) => {
       self.progress === 1 ? anim.progress(1) : anim.play();
     },
   });
+});
+
+gsap.set(".moreProjectsBtn", {
+  autoAlpha: 0,
+  y: "+100%",
+});
+gsap.to(".moreProjectsBtn", {
+  scrollTrigger: {
+    trigger: ".moreProjectsBtn",
+    start: "top 85%",
+    end: "bottom center",
+  },
+  autoAlpha: 1,
+  duration: 1.2,
+  ease: "bounce.out",
+  y: 0,
 });
