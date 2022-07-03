@@ -84,10 +84,10 @@ header {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
 }
 header img {
+  margin-left: 25px;
   cursor: pointer;
-  margin: 10px;
   margin-right: auto;
-  max-width: 80px;
+  max-width: 85px;
   width: 100%;
   height: auto;
   border-radius: 2.5px;
@@ -110,6 +110,14 @@ header nav ul li a:hover, header nav ul li a:focus {
   border-bottom: 3px solid #f2b035;
 }
 
+.margin-right {
+  margin-right: auto;
+}
+
+.noShadow {
+  box-shadow: none;
+}
+
 .hamburger {
   cursor: pointer;
   display: none;
@@ -124,6 +132,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   color: white;
   background-color: #f2b035;
   margin: 5px auto;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -245,7 +254,7 @@ main {
   gap: 10px;
   background-color: #fff;
   border: solid #f2b035 5px;
-  grid-template-areas: "two two two" "three four five" "six seven eight" "nine ten eleven";
+  grid-template-areas: "two two two" "three four five" "six seven eight" "nine ten eleven" "twelve thirteen fourteen";
 }
 .grid-container-about-2 h3 {
   text-align: center;
@@ -302,6 +311,18 @@ main {
 
 .grid-item-11 {
   grid-area: eleven;
+}
+
+.grid-item-12 {
+  grid-area: twelve;
+}
+
+.grid-item-13 {
+  grid-area: thirteen;
+}
+
+.grid-item-14 {
+  grid-area: fourteen;
 }
 
 .flex-container-projects {
@@ -395,93 +416,31 @@ main {
 }
 
 /* In progress item */
-.flex-item-8 {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+.flex-item-4,
+.flex-item-7 {
   height: fit-content;
 }
 
-.slideshow-container {
-  position: relative;
-  text-align: initial;
-  cursor: pointer;
+.moreProjectsBtn {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
 }
-.slideshow-container img {
-  max-width: 100%;
-}
-.slideshow-container .prev,
-.slideshow-container .next {
-  position: absolute;
-  top: 35%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
+.moreProjectsBtn a {
+  font-size: 1rem;
+  padding: 1em 2em;
+  border: 2px solid rgb(56, 56, 56);
+  border-radius: 2em;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-color: #f2b035;
-  opacity: 30%;
-}
-.slideshow-container .prev:hover, .slideshow-container .prev:focus,
-.slideshow-container .next:hover,
-.slideshow-container .next:focus {
-  opacity: 100%;
-  background-color: #f2b035;
-}
-.slideshow-container .dot {
+  letter-spacing: 0.12em;
+  color: rgb(56, 56, 56);
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 300ms, color 200ms;
 }
-.slideshow-container .activeSlider,
-.slideshow-container .dot:hover,
-.slideshow-container .dot:focus {
-  /* #717171 */
-  background-color: #f2b035;
-}
-.slideshow-container .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.next {
-  right: 0;
-  margin-right: 20px;
-  border-radius: 0 5px 5px 0;
-}
-
-.prev {
-  margin-left: 20px;
-  left: 0;
-  border-radius: 5px 0 0 5px;
+.moreProjectsBtn a:hover, .moreProjectsBtn a:focus {
+  background-color: rgb(56, 56, 56);
+  color: #fff;
 }
 
 .container-contact-form {
@@ -533,11 +492,10 @@ footer .footer-content {
   line-height: 45px;
 }
 footer .footer-content a:hover {
-  color: #f2b035;
+  color: #fff;
 }
 footer .footer-content img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 20px;
 }
 footer .footer-content h5 > img {
@@ -579,10 +537,10 @@ footer .footer-content h5 > img {
 
   .grid-container-about-2 {
     min-width: 100%;
-    grid-template-areas: "two two" "three four" "five six" "seven eight" "nine ten" "eleven";
+    grid-template-areas: "two two" "three four" "five six" "seven eight" "nine ten" "eleven twelve" "thirteen fourteen";
   }
   .grid-container-about-2 img {
-    width: 50px;
+    width: 55px !important;
     margin: 5px;
   }
 
@@ -599,6 +557,13 @@ footer .footer-content h5 > img {
   }
   #progress-value {
     font-size: 35px;
+  }
+
+  .moreProjectsBtn {
+    margin: 0.5em;
+  }
+  .moreProjectsBtn a {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 768px) {
